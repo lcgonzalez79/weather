@@ -14,13 +14,11 @@ const search=document.querySelector('input')
 const messageOne=document.querySelector('#message-1')
 const messageTwo=document.querySelector('#message-2')
 
-
-
 weatherForm.addEventListener('submit',(e)=>{
     e.preventDefault()
 
     const location=search.value
-    address='http://localhost:3000/weather?search='+location
+    address='/weather?search='+location
 
 
     messageOne.textContent='Loading....'
