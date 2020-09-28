@@ -35,7 +35,7 @@ weatherForm.addEventListener('submit',(e)=>{
             console.log(data.location)
             console.log(data.address) */
             messageOne.textContent=data.location
-            messageTwo.textContent=data.forecast.description+' with temperature of '+data.forecast.temperature+' celsius and feels like '+data.forecast.feels
+            messageTwo.textContent=data.forecast.description+' with temperature of '+data.forecast.temperature+' celsius and feels like '+data.forecast.feels+'. Humidity is '+data.forecast.humidity
             }
         })
     })
